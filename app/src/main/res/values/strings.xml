@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">BSCS-SEC_A_BATCH-20</string>
+    <string name="myemlto">To</string>
+    <string name="myeml2">Name</string>
+    <string name="to">to</string>
+    <string name="from">From</string>
+    <string name="To">To</string>
+    <string name="write_here">Write Here</string>
+    <string name="button">Button</string>
+    <string name="your_name">Your Name</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="textview">TextView</string>
+    <string name="name">Name</string>
+    <string name="go_to_main_activity">Go to Main Activity</string>
+    <string name="open_dialpad">Open DialPad</string>
+    <string name="open_google">Open Google</string>
+    <string name="open_gallery">Open Gallery</string>
+    <string name="todo">TODO</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="todoimgs">TODO</string>
+    <string name="this_is_second_activity">This is Second Activity</string>
+    <string name="save_pref">Save Pref</string>
+    <string name="show_pref">Show Pref</string>
+    <string name="txtsharefpref">TextView</string>
+    <string name="todo1">TODO</string>
+</resources>
