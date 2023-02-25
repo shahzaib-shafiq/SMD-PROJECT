@@ -23,4 +23,11 @@
     <string name="show_pref">Show Pref</string>
     <string name="txtsharefpref">TextView</string>
     <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="download_image">Download Image</string>
+    <string name="todoimg2" />
+    <string name="button2">Button</string>
+    <string name="download_web_content">Download Web Content</string>
+    <string name="request_for_permission">Request For Permission</string>
+    <string name="check_permission">Check Permission</string>
 </resources>
