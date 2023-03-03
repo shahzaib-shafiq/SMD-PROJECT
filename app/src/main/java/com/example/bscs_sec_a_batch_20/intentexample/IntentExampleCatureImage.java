@@ -43,6 +43,7 @@ public class IntentExampleCatureImage extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode==103 && resultCode==RESULT_OK)
         {
+
             Bitmap bitmap = (Bitmap) data.getExtras().get("data");
             imageView.setImageBitmap(bitmap);
 

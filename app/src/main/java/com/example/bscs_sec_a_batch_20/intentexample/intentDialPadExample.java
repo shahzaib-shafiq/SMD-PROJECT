@@ -36,7 +36,7 @@ public class intentDialPadExample extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:+123456789"));
         startActivity(intent);
-    }
+                                        }
 
     public void OpenBrowser(View view) {
 
