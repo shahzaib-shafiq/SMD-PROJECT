@@ -10,6 +10,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+
     }
 }
 rootProject.name = "BSCS-SEC_A_BATCH-20"
