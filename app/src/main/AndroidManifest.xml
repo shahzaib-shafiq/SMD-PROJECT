@@ -19,6 +19,33 @@
         android:theme="@style/Theme.BSCSSEC_A_BATCH20"
         tools:targetApi="31">
         <activity
+            android:name=".StaticFragmentExample.StaticFragmentMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FragmentExamples.FragmantExampleoneMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ServiceExamples.BoundServiceExample.BoundServiceExample"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".CardViewExample.CardViewScrollingActivityMain"
             android:exported="true"
             android:label="@string/title_activity_card_view_scrolling_main"
@@ -30,7 +57,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.bscs_sec_a_batch_20_intentexamples.RecyclerViewExample.RecyclerViewMainActivity"
+            android:name=".RecyclerViewExp.RecyclerViewMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -167,6 +194,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".ServiceExamples.BoundServiceExample.MyBoundService" />
     </application>
 
 </manifest>

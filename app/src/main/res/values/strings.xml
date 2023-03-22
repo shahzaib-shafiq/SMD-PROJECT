@@ -1,4 +1,28 @@
 <resources>
+
+    <string-array name="contacts_array">
+        <item>Ali</item>
+        <item>Ahmed</item>
+        <item>Uzair</item>
+        <item>Umair</item>
+        <item>Shahzaib</item>
+
+    </string-array>
+
+
+    <string-array name="details_array">
+
+        <item>Details of Ali</item>
+        <item>Details of Ahmed</item>
+        <item>Details of Uzair</item>
+        <item>Details of Umair</item>
+        <item>Details of Shahzaib</item>
+        
+
+
+    </string-array>
+
+
     <string name="app_name">BSCS-SEC_A_BATCH-20</string>
     <string name="myemlto">To</string>
     <string name="myeml2">Name</string>
@@ -125,4 +149,5 @@
     </string>
     <string name="action_settings">Settings</string>
     <string name="todo3">TODO</string>
+    <string name="landscape_mode">LandScape Mode</string>
 </resources>
