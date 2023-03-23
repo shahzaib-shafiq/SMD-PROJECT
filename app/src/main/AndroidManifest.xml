@@ -195,7 +195,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".ServiceExamples.BoundServiceExample.MyBoundService" />
+        <service android:name=".ServiceExamples.BoundServiceExample.MyBoundService"></service>
     </application>
 
 </manifest>

@@ -8,51 +8,67 @@ import android.os.IBinder;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
-public class MyBoundService extends Service
-{
 
+import com.example.bscs_sec_a_batch_20.R;
 
-    public static final String TAG="TAG";
-    private final Binder myBinder= new MyBinder();
+public class MyBoundService extends Service {
+    private final Binder myBinder = new MyBinder();
 
-
+    public static final String TAG = "TAG";
     public MediaPlayer mediaPlayer;
 
-
-    public void Play(){
-        mediaPlayer.start();
-
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        mediaPlayer = MediaPlayer.create(this, R.raw.music);
+        Log.d(TAG,"Oncreate Method is Called");
     }
-    public void Pause(){
-        mediaPlayer.pause();
-
-    }
-
-    public boolean isPlay(){
-        return mediaPlayer.isPlaying();
-
-    }
-
-
 
     @Nullable
     @Override
+
     public IBinder onBind(Intent intent) {
-        Log.d(TAG,"OnBind() Started");
+
+        Log.d(TAG,"onBind called");
         return myBinder;
     }
 
     @Override
     public boolean onUnbind(Intent intent) {
-        Log.d(TAG,"OnUnBind() Started");
         return super.onUnbind(intent);
     }
 
-    public class MyBinder  extends Binder
+
+    //When bound service then binder msut be extend
+    public class MyBinder extends Binder
     {
         MyBoundService getServiceMethod()
         {
+            //return the context of its parent class
             return MyBoundService.this;
         }
+
+
+    }
+    public void Play()
+    {
+        mediaPlayer.start();
+    }
+    public void Stop()
+    {
+        mediaPlayer.stop();
+    }
+
+    public boolean isPlaying()
+    {
+        return mediaPlayer.isPlaying();
+    }
+
+
+    @Override
+    public void onDestroy()
+    {
+        super.onDestroy();
+        mediaPlayer.release();
     }
 }

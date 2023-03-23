@@ -1,19 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ServiceExample.BoundServiceExample.BoundServiceexamples.BoundServiceExample">
+    tools:context=".ServiceExamples.BoundServiceExample.BoundServiceExample">
+
 
     <Button
-        android:id="@+id/button27"
+        android:id="@+id/PLAY"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="PlayPause"
-        android:text="play/pause"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_weight="1"
+        android:text="@string/play"
+        android:onClick="play"
+        style="?android:attr/buttonBarButtonStyle"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/STOP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/stop"
+        android:onClick="stop"
+        style="?android:attr/buttonBarButtonStyle"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/NEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/next"
+        android:onClick="Next"
+        style="?android:attr/buttonBarButtonStyle"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:onClick="Prev"
+        android:id="@+id/PREV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/prev"
+        style="?android:attr/buttonBarButtonStyle"
+        tools:ignore="VisualLintButtonSize" />
+</LinearLayout>
