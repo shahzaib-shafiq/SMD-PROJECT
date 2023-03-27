@@ -19,7 +19,28 @@
         android:theme="@style/Theme.BSCSSEC_A_BATCH20"
         tools:targetApi="31">
         <activity
-            android:name=".StaticFragmentExample.StaticFragmentMainActivity"
+            android:name=".SqlLiteExample.NewContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FragmentExamples.CommunicationBWFragments.CMMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SqlLiteExample.MainActivityContactList"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FragmentExamples.StaticFragmentExample.StaticFragmentMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -195,7 +216,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".ServiceExamples.BoundServiceExample.MyBoundService"></service>
+        <service android:name=".ServiceExamples.BoundServiceExample.MyBoundService" />
     </application>
 
 </manifest>

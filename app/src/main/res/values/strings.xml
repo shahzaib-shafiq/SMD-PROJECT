@@ -17,7 +17,6 @@
         <item>Details of Uzair</item>
         <item>Details of Umair</item>
         <item>Details of Shahzaib</item>
-        
 
 
     </string-array>
@@ -155,4 +154,16 @@
     <string name="stop">STOP</string>
     <string name="next">NEXT</string>
     <string name="prev">PREV</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contacts" >Contacts </string>>
+    <string name="add_contact"  />
+    <string name="add_contacts">add_contact</string>
+    <string name="firstname" />
+    <string name="secondname" />
+    <string name="phone_number" />
+    <string name="email" />
+    <string name="home_address" />
+    <string name="buttonsavetosql" />
+    <string name="click_here">Click Here</string>
 </resources>

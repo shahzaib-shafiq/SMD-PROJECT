@@ -1,4 +1,4 @@
-package com.example.bscs_sec_a_batch_20.StaticFragmentExample;
+package com.example.bscs_sec_a_batch_20.FragmentExamples.StaticFragmentExample;
 
 import android.content.Context;
 import android.os.Bundle;

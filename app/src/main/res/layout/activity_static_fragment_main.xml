@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StaticFragmentExample.StaticFragmentMainActivity">
+    tools:context=".FragmentExamples.StaticFragmentExample.StaticFragmentMainActivity">
 <fragment
     android:layout_width="0dp"
     android:layout_height="match_parent"
     android:layout_weight="1"
-    class="com.example.bscs_sec_a_batch_20.StaticFragmentExample.ContactsFragment"
+    class="com.example.bscs_sec_a_batch_20.FragmentExamples.StaticFragmentExample.ContactsFragment"
     android:id="@+id/contactsfragment"
     >
 
@@ -19,7 +19,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        class="com.example.bscs_sec_a_batch_20.StaticFragmentExample.ContactDetailsFragment"
+        class="com.example.bscs_sec_a_batch_20.FragmentExamples.StaticFragmentExample.ContactDetailsFragment"
         android:id="@+id/detailsfragment"
 
         >
