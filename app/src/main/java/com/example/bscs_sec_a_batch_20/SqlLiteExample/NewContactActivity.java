@@ -2,6 +2,7 @@ package com.example.bscs_sec_a_batch_20.SqlLiteExample;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -20,11 +21,6 @@ public class NewContactActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_contact);
         dbQueries=new DBQueries(getApplicationContext());
-
-
-
-
-
         firstName = (EditText) findViewById(R.id.edtfirstname);
         lastName = (EditText) findViewById(R.id.edtsecondname);
         phoneNumber = (EditText) findViewById(R.id.edtphonenumber);
@@ -32,10 +28,7 @@ public class NewContactActivity extends AppCompatActivity {
         homeAddress = (EditText) findViewById(R.id.edthomeaddress);
 
     }
-
-
-
-    public void SaveIntoDB(View view) {
+        public void SaveIntoDB(View view) {
         HashMap<String,String> contact = new HashMap<String,String>();
         contact.put("firstName",firstName.getText().toString());
         contact.put("lastName",lastName.getText().toString());
@@ -44,10 +37,8 @@ public class NewContactActivity extends AppCompatActivity {
         contact.put("homeAddress",homeAddress.getText().toString());
 
         dbQueries.InsertSingleContact(contact);
-
-
-
-
+        Intent intent = new Intent(this,MainActivityContactList.class);
+        startActivity(intent);
 
 
     }

@@ -156,14 +156,16 @@
     <string name="prev">PREV</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="contacts" >Contacts </string>>
-    <string name="add_contact"  />
+    <string name="contacts">Contacts </string>>
+    <string name="add_contact" />
     <string name="add_contacts">add_contact</string>
-    <string name="firstname" >First Name</string>
-    <string name="secondname" >Last Name</string>
-    <string name="phone_number" >Phone </string>
-    <string name="email" >Email</string>
-    <string name="home_address" >Home Adress</string>
-    <string name="buttonsavetosql" >SaveToDB</string>
+    <string name="firstname">First Name</string>
+    <string name="secondname">Last Name</string>
+    <string name="phone_number">Phone </string>
+    <string name="email">Email</string>
+    <string name="home_address">Home Adress</string>
+    <string name="buttonsavetosql">SaveToDB</string>
     <string name="click_here">Click Here</string>
+    <string name="update">Update</string>
+    <string name="deletefromdb">Delete from db</string>
 </resources>

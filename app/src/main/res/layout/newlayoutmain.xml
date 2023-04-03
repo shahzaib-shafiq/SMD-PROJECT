@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:id="@+id/txtid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        ></TextView>
+
+    <TextView
+
+        android:layout_marginStart="30dp"
+        android:id="@+id/txtfirstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        ></TextView>
+
+
+    <TextView
+        android:layout_marginStart="30dp"
+        android:id="@+id/txtlastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        ></TextView>
+
+
+
+    <TextView
+        android:layout_marginStart="30dp"
+        android:id="@+id/txtphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        ></TextView>
+
+    <TextView
+        android:layout_marginStart="30dp"
+        android:id="@+id/txtemailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        ></TextView>
+
+
+
+
+    <TextView
+        android:layout_marginStart="30dp"
+        android:id="@+id/txthomeAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        ></TextView>
+
+
+
+
+
+
+
+
+
+
+</TableRow>
