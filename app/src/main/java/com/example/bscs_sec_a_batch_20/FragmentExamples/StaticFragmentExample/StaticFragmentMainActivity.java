@@ -20,8 +20,7 @@ public class StaticFragmentMainActivity extends AppCompatActivity implements Con
         setContentView(R.layout.activity_static_fragment_main);
         contactsArray= getResources().getStringArray(R.array.contacts_array);
         contactDetailArray=getResources().getStringArray(R.array.details_array);
-        detailsFragment= (ContactDetailsFragment) getSupportFragmentManager().findFragmentById(R.id.detailsfragment);
-
+        detailsFragment= (ContactDetailsFragment)getSupportFragmentManager().findFragmentById(R.id.detailsfragment);
     }
 
     @Override

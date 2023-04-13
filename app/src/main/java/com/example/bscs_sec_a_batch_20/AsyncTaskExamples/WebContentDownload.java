@@ -51,7 +51,7 @@ public class WebContentDownload extends AppCompatActivity {
         protected String doInBackground(String... strings) {
             try {
 
-                Log.d("TAG","Do in Background in Po=rogress");
+                Log.d("TAG","Do in Background in Porogress");
 
                 URL url = new URL(strings[0]);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();

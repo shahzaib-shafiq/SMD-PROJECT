@@ -18,7 +18,8 @@ public class MyBoundService extends Service {
     public MediaPlayer mediaPlayer;
 
     @Override
-    public void onCreate() {
+    public void onCreate()
+    {
         super.onCreate();
         mediaPlayer = MediaPlayer.create(this, R.raw.music);
         Log.d(TAG,"Oncreate Method is Called");

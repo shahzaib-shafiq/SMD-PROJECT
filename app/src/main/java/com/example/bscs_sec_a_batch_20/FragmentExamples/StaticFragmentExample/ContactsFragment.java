@@ -16,7 +16,9 @@ public class ContactsFragment extends ListFragment  {
 
 
     public ListSelectionListner mlistner=null;
-    public interface ListSelectionListner{
+        public interface ListSelectionListner
+
+        {
 
         public void onSelection(int position);
 
@@ -26,7 +28,8 @@ public class ContactsFragment extends ListFragment  {
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         mlistner= (ListSelectionListner) getActivity();
-    }
+
+        }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {

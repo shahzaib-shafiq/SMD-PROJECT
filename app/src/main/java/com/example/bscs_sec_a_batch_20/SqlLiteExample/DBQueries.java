@@ -22,7 +22,7 @@ public class DBQueries extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
-        String SqlTableQuery = "CREATE TABLE CONTACTS(" +
+        String  SqlTableQuery = "CREATE TABLE CONTACTS(" +
                 "_id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "firstName TEXT," +
                 "lastName TEXT," +
@@ -74,6 +74,7 @@ public class DBQueries extends SQLiteOpenHelper {
 
         String Query = "SELECT * FROM CONTACTS";
         Cursor cursor = db.rawQuery(Query, null);
+
         if (cursor.moveToFirst()) {
             do {
                 HashMap<String, String> hashMap = new HashMap<String, String>();
@@ -105,7 +106,6 @@ public class DBQueries extends SQLiteOpenHelper {
         HashMap<String, String> hashMap = new HashMap<String, String>();
         if (cursor.moveToFirst()) {
 
-
             hashMap.put("_id", cursor.getString(0));
             hashMap.put("firstName", cursor.getString(1));
             hashMap.put("lastName", cursor.getString(2));
@@ -113,8 +113,31 @@ public class DBQueries extends SQLiteOpenHelper {
             hashMap.put("emailAddress", cursor.getString(4));
             hashMap.put("homeAddress", cursor.getString(5));
 
-
         }
         return hashMap;
+    }
+
+    //update
+    public void UpdateContact(HashMap<String, String> contact, String id) {
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("_id", contact.get("_id"));
+        contentValues.put("firstName", contact.get("firstName"));
+        contentValues.put("lastName", contact.get("lastName"));
+        contentValues.put("phoneNumber", contact.get("phoneNumber"));
+        contentValues.put("emailAddress", contact.get("emailAddress"));
+        contentValues.put("homeAddress", contact.get("homeAddress"));
+        db.update("CONTACTS", contentValues, "_id=?", new String[]{id});
+
+    }
+
+
+    //Delete
+    public void DeleteContact(String id) {
+
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete("CONTACTS","_id=?",new String[]{id});
+
+
     }
 }

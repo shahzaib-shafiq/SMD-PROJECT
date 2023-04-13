@@ -28,7 +28,7 @@ public class MainActivityContactList extends AppCompatActivity {
     listView= findViewById(R.id.dblist);
 
     ArrayList<HashMap<String,String>> contactlist = dbQueries.getAllContacts();
-        SimpleAdapter adapter = new SimpleAdapter(this,contactlist,R.layout.newlayoutmain,
+    SimpleAdapter adapter = new SimpleAdapter(this,contactlist,R.layout.newlayoutmain,
 
                 new String[]{"_id","firstName","lastName","phoneNumber","emailAddress","homeAddress"},
 
@@ -41,7 +41,7 @@ public class MainActivityContactList extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int pos, long id) {
                 Intent intent = new Intent(MainActivityContactList.this,EditContactActivity.class);
-            intent.putExtra("id",String.valueOf(pos+1));
+                intent.putExtra("id",String.valueOf(pos+1));
             startActivity(intent);
 
 

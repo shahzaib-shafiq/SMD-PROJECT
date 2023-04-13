@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "920833800013",
+    "project_id": "bscs-sec-a-batch-20",
+    "storage_bucket": "bscs-sec-a-batch-20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920833800013:android:4b26e448620ae3439de904",
+        "android_client_info": {
+          "package_name": "com.example.bscs_sec_a_batch_20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920833800013-86346s97oiqvp5kgksu2s7t9mnt2dt9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABkjAEX26NiMaUOG3MNidqEE-gdFXewfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920833800013-86346s97oiqvp5kgksu2s7t9mnt2dt9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
