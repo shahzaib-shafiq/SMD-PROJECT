@@ -47,7 +47,7 @@ public class FirebaseMainActivity extends AppCompatActivity {
 //        reference.child(id).setValue(obj);
 
 
-//        reference.setValue("my First Message");
+       reference.setValue("my First Message");
 
 
     }
