@@ -17,10 +17,13 @@
         android:layout_marginStart="85dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="78dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/firstname"
         android:inputType="textPersonName"
-        android:autofillHints="" />
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
     <EditText
         android:id="@+id/editsecondname"
         android:layout_width="240dp"
@@ -31,10 +34,13 @@
         android:layout_marginStart="82dp"
         android:layout_marginTop="54dp"
         android:layout_marginEnd="73dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/secondname"
         android:inputType="textPersonName"
-        android:autofillHints="" />
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
     <EditText
         android:id="@+id/editphonenumber"
         android:layout_width="238dp"
@@ -48,7 +54,10 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/phone_number"
-        android:inputType="number|textPersonName" />
+        android:inputType="number|textPersonName"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
     <EditText
         android:id="@+id/editemailaddress"
         android:layout_width="241dp"
@@ -59,10 +68,13 @@
         android:layout_marginStart="76dp"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="78dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textPersonName"
-        android:autofillHints="" />
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
     <EditText
         android:id="@+id/edithomeaddress"
         android:layout_width="245dp"
@@ -73,10 +85,12 @@
         android:layout_marginStart="74dp"
         android:layout_marginTop="43dp"
         android:layout_marginEnd="76dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/home_address"
         android:inputType="textPersonName"
-        android:autofillHints="" />
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <Button
         android:id="@+id/btnupdate"
@@ -106,6 +120,6 @@
         android:layout_marginBottom="17dp"
         android:layout_toEndOf="@+id/btnupdate"
         android:text="@string/deletefromdb"
-        tools:ignore="TextSizeCheck" />
+        tools:ignore="TextSizeCheck,VisualLintButtonSize" />
 
 </RelativeLayout>

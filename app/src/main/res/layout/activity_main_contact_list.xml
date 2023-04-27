@@ -23,9 +23,9 @@
             android:layout_width="182dp"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:text="@string/add_contacts"
-
             android:onClick="OpenNewContactActivity"
+
+            android:text="@string/add_contacts"
             tools:ignore="TextSizeCheck" />
     </TableRow>
     <TableRow

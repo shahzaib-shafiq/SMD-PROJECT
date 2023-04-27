@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -120,15 +121,17 @@ public class DBQueries extends SQLiteOpenHelper {
     //update
     public void UpdateContact(HashMap<String, String> contact, String id) {
         SQLiteDatabase db = getWritableDatabase();
+        Log.d("id",id);
         ContentValues contentValues = new ContentValues();
-        contentValues.put("_id", contact.get("_id"));
         contentValues.put("firstName", contact.get("firstName"));
-        contentValues.put("lastName", contact.get("lastName"));
-        contentValues.put("phoneNumber", contact.get("phoneNumber"));
+        contentValues.put("lastName",  contact.get("lastName"));
+        contentValues.put("phoneNumber",contact.get("phoneNumber"));
         contentValues.put("emailAddress", contact.get("emailAddress"));
         contentValues.put("homeAddress", contact.get("homeAddress"));
-        db.update("CONTACTS", contentValues, "_id=?", new String[]{id});
 
+
+         db.update("CONTACTS", contentValues, id+ "= ? ", new String[]{String.valueOf(id)});
+        Log.d("Data","Updated");
     }
 
 
@@ -136,8 +139,10 @@ public class DBQueries extends SQLiteOpenHelper {
     public void DeleteContact(String id) {
 
         SQLiteDatabase db = getWritableDatabase();
-        db.delete("CONTACTS","_id=?",new String[]{id});
-
+        //Log.d("Data","Deleted");
+        Log.d("id",id);
+        db.delete("CONTACTS",id+ "= ? ",new String[]{String.valueOf(id)});
+        Log.d("Data","Deleted");
 
     }
 }

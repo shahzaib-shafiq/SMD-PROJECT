@@ -41,5 +41,7 @@ public class NewContactActivity extends AppCompatActivity {
         startActivity(intent);
 
 
+
+
     }
 }

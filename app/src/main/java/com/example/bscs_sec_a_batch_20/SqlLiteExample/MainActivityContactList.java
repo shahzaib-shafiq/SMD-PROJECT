@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import com.example.bscs_sec_a_batch_20.R;
 
@@ -41,8 +43,11 @@ public class MainActivityContactList extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int pos, long id) {
                 Intent intent = new Intent(MainActivityContactList.this,EditContactActivity.class);
+                // String ID=listView.getAdapter().getItem(pos).toString();
                 intent.putExtra("id",String.valueOf(pos+1));
-            startActivity(intent);
+                Toast.makeText(getApplicationContext(), "Item Clicked at position " + pos, Toast.LENGTH_SHORT).show();
+                //Log.d("ID = ", String.valueOf(pos+1));
+                startActivity(intent);
 
 
             }
