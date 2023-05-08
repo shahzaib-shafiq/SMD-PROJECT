@@ -25,6 +25,8 @@ public class FirebaseMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firebase_main);
+
+
         database=FirebaseDatabase.getInstance("https://bscs-sec-a-batch-20-default-rtdb.firebaseio.com/");
 
         reference=database.getReference("MyDatabase");
@@ -59,9 +61,6 @@ public class FirebaseMainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String value=snapshot.getValue().toString();
                 textView.setText(value);
-
-
-
             }
 
             @Override

@@ -40,7 +40,7 @@ public class FileHandlingMainActivity extends AppCompatActivity {
         String TextData=editText.getText().toString();
         try {
 
-            FileOutputStream outputStream= openFileOutput(FILE_NAME, Context.MODE_PRIVATE) ;
+            FileOutputStream outputStream = openFileOutput(FILE_NAME, Context.MODE_PRIVATE) ;
         outputStream.write(TextData.getBytes());
         editText.setText("");
             Snackbar.make(view,"Text Saved",Snackbar.LENGTH_LONG).show();

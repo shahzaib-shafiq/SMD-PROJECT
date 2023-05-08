@@ -176,4 +176,10 @@
     <string name="textview4">TextView</string>
     <string name="save_text">Save Text</string>
     <string name="show_text">Show Text</string>
+    <string name="namess">Name</string>
+    <string name="namesss">Name</string>
+    <string name="phonesss">Phone</string>
+    <string name="namer">Name</string>
+    <string name="content">Content</string>
+    <string name="sensorvalues">SensorValues</string>
 </resources>

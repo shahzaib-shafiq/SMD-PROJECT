@@ -27,8 +27,6 @@ public class AirplaneModeChangeMainActivity extends AppCompatActivity {
         IntentFilter intentFilter = new IntentFilter(Intent.ACTION_AIRPLANE_MODE_CHANGED);
         registerReceiver(airplaneModeChange,intentFilter);
 
-
-
     }
 
     @Override

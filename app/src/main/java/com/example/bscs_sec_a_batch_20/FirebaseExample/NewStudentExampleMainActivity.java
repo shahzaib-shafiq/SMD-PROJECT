@@ -35,7 +35,7 @@ public class NewStudentExampleMainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
 
         database = FirebaseDatabase.getInstance("https://bscs-sec-a-batch-20-default-rtdb.firebaseio.com/");
-        reference = database.getReference("MyDatabase");
+        reference = database.getReference("MyDatabse");
         messageList = new ArrayList<>();
         readDataFromFirebase();
     }
